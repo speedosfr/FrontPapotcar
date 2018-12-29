@@ -19,13 +19,11 @@ html {
     -webkit-background-size: cover; /* pour anciens Chrome et Safari */
     background-size: cover; /* version standardisée */
   }
-#logo {
- 
-}
+
 nav {
     margin-top: 50px;
     font-size : 1.2em;
-    margin-bottom: 130px;
+    margin-bottom: 80px;
 }
 #main{
     max-width:1280px;    
@@ -34,36 +32,91 @@ nav {
     position:relative;      
     }    
     
-#body_search {
-    height: auto;
-    width: 1000px;    
+#body_search,#body_login {
+   
     padding-top: 150px;
     padding-bottom: 150px;
-    margin: auto;
-    background-color: rgba(197, 193, 193, 0.459);
+    background-color: rgba(35, 51, 42, 0.5);
     border-radius: 30px;
 } 
 #body_login {
-    height: auto;
-    width: 1000px;    
+   
     padding-top: 50px;
     padding-bottom: 50px;
     margin: auto;
-    background-color: rgba(197, 193, 193, 0.459);
+    background-color: rgba(122, 172, 117, 0.5);
     border-radius: 30px;
 } 
-#body_signin {
+#body_signin,#body_createRoadTrip {
     height: auto;
     width: 1000px;    
     padding: 20px;
-    padding-bottom: 50px;
+    padding-bottom: 10px;
     margin: auto;
-    background-color: rgba(197, 193, 193, 0.459);
+    background-color: rgba(122, 172, 117, 0.5);
     border-radius: 30px;
 } 
 #map {
-    margin-top: 150px;
+    margin-top: 50px;
     width: 450px;
     height: 400px;   
   }
- 
+#roadBook {
+    width: 450px;
+    height: 200px; 
+    padding: 5px;
+    margin-top: 10px;
+    background-color: rgba(122, 172, 117, 0.5);
+}
+#btn_subRoadBook{
+    display: none;
+}
+#detail_road {
+    display: none;
+    padding-top: 40px;
+}
+#roadBook{
+    display: none;
+}
+#formCrypt {
+    display : none;
+}
+#show_result {
+    margin-top: 20px;
+}
+#txt_pswd {
+    font-size: 10px;
+    margin-bottom: 20px;
+}
+#nb_place{
+    margin-bottom: 15px;
+}
+#chk_place{
+    margin-left: 5px;
+}
+#details{
+    padding-top: 30px;
+}
+#btn_nav_searchSM ,#btn_creatRoadSM,#btn_CnxSM {
+    display: none;
+}
+#btn_search{
+    margin-top: 30px;
+}
+
+
+@media (max-width: 576px) {
+    
+    #btn_nav_searchSM ,#btn_creatRoadSM,#btn_CnxSM{
+        display: block;
+        width: 100px;
+        height: auto;
+        margin: 5px;        
+        display: inline;
+    }
+    #btn_nav_searchHI,#btn_creatRoadHI,#btn_CnxHI,#logo{
+        display: none;
+    }
+   
+
+    }
